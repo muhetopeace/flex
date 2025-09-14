@@ -1,0 +1,62 @@
+:root {
+    --radius: 5px;
+    --padding:10px;
+}
+.container{
+    display: grid;
+    border: 1px solid black;
+    font-weight: 800;
+    text-transform: uppercase;
+    grid-gap: 10px;
+     text-align: center;
+     height: 100vh;
+     grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-areas: 
+     "content1 content2 content2 content4"
+     "content1 content3 content3 content4"
+     "content1 content5 content6 content4"
+     "content1 content7 content7 content4";
+}
+.container1{
+    background-color: aquamarine;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content1;
+}
+.container2{
+    background-color: blue;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content2;
+}
+.container3{
+    background-color: yellow;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content3;
+}
+.container4{
+    background-color: green;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content4;
+}
+.container5{
+    background-color: red;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content5;
+}
+.container6{
+    background-color: purple;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content6;
+}
+.container7{
+    background-color: pink;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content7;
+}
